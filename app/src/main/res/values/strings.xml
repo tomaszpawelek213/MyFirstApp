@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">MyFirstApp</string>
     <string name="hello_world">Hello World...</string>
+
+    <string name="first_name_label">Podaj swoje imię</string>
+    <string name="last_name_label">Podaj swoje nazwisko</string>
+    <string name="user_name_label">login</string>
+    <string name="mail_label">email</string>
+    <string name="password_label">hasło</string>
+    <string name="button_label">OK</string>
+    <string name="hint_password">Hasło musi zawierać min. 8 znaków</string>
 </resources>
