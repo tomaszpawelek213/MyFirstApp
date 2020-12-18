@@ -105,13 +105,12 @@
                     android:hint="@string/hint_password"
                     tools:text="some_password" />
 
-
                 <Button
                     android:id="@+id/okButton"
                     android:layout_marginTop="@dimen/dimen_30"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{viewModel::okButtonClicked}"
+                    android:onClick="@{() -> viewModel.okButtonClicked()}"
                     android:text="@string/button_label" />
 
             </LinearLayout>
