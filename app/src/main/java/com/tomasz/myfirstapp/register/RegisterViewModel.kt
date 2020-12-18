@@ -1,18 +1,16 @@
 package com.tomasz.myfirstapp.register
 
-import android.view.View
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.hadilq.liveevent.LiveEvent
+import com.tomasz.myfirstapp.fireEvent
 
 class RegisterViewModel : ViewModel() {
 
     val firstName = MutableLiveData<String>()
-    val okButtonClickEvent = MutableLiveData<Unit>()
+    val okButtonClickEvent = LiveEvent<Unit>()
 
-    fun okButtonClicked(view: View) {
-        println("DEBUG: $firstName")
-
-        okButtonClickEvent.postValue(Unit)
+    fun okButtonClicked() {
+        okButtonClickEvent.fireEvent()
     }
-
 }
