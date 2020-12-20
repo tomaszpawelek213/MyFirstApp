@@ -8,5 +8,7 @@
     <string name="mail_label">email</string>
     <string name="password_label">hasło</string>
     <string name="button_label">OK</string>
+    <string name="login_button">zaloguj</string>
     <string name="hint_password">Hasło musi zawierać min. 8 znaków</string>
+    <string name="hint_username">login 8 znaków</string>
 </resources>

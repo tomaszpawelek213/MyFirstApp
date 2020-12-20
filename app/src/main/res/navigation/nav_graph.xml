@@ -17,6 +17,6 @@
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.tomasz.myfirstapp.SecondFragment"
+        android:name="com.tomasz.myfirstapp.login.LoginFragment"
         android:label="SecondFragment" />
 </navigation>
