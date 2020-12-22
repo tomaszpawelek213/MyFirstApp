@@ -48,5 +48,13 @@ class SettingsFragment : Fragment() {
 //            viewModel.selectedThemeLabel.value = it ? getString(R.string.settings_fragment_theme_light) : getString(R.string.settings_fragment_theme_dark)
 
         }
+//      obserwujemy switch2
+        viewModel.selectedSwitchColor.observe(viewLifecycleOwner){
+            if(it){
+                viewModel.switchColorText.value = getString(R.color.red)
+            }else{
+                viewModel.switchColorText.value = getString(R.color.grey)
+            }
+        }
     }
 }

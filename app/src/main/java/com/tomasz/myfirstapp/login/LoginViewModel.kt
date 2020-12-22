@@ -14,6 +14,7 @@ class LoginViewModel : ViewModel() {
     val onInvalidLoginEvent = LiveEvent<Unit>()
     val goToSettingsEvent = LiveEvent<Unit>()
 
+
     fun onLoginButtonClick() {
         if (username.value == "admin" && password.value == "Admin123" && isPasswordValid()) {
             onValidLoginEvent.fireEvent()

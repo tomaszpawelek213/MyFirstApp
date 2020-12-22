@@ -10,4 +10,5 @@
 
     <color name="app_background">#72C1C0</color>
     <color name="grey">#454E4E</color>
+    <color name="red">#FFCF0935</color>
 </resources>
