@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NewYear">
+        <item name="android:fontFamily">@font/new_year</item>
+    </style>
+
+    <style name="NewYear.Grey">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="NewYear.Grey.32">
+        <item name="android:textSize">@dimen/font_size_32</item>
+    </style>
+
+    <style name="NewYear.Grey.64">
+        <item name="android:textSize">@dimen/font_size_64</item>
+    </style>
+
+</resources>

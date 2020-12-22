@@ -4,5 +4,9 @@
     <dimen name="dimen_10">10dp</dimen>
     <dimen name="dimen_20">20dp</dimen>
     <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
     <dimen name="dimen_120">120dp</dimen>
+
+    <dimen name="font_size_32">32sp</dimen>
+    <dimen name="font_size_64">64sp</dimen>
 </resources>

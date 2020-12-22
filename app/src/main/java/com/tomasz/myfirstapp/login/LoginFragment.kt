@@ -9,6 +9,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.observe
+import androidx.navigation.fragment.findNavController
 import com.tomasz.myfirstapp.BR
 import com.tomasz.myfirstapp.R
 import com.tomasz.myfirstapp.databinding.FragmentLoginBinding
@@ -44,6 +45,10 @@ class LoginFragment : Fragment() {
             Toast.makeText(requireContext(), "nieporawane dane logowania: " +
                     "[username=${viewModel.username.value}, password=${viewModel.password.value}]",
                 Toast.LENGTH_LONG).show()
+        }
+//      pokaż trzeci ekran
+        viewModel.goToSettingsEvent.observe(viewLifecycleOwner){
+            findNavController().navigate(R.id.action_loginFragment_to_settingsFragment)
         }
 
     }

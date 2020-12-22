@@ -9,14 +9,25 @@
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.tomasz.myfirstapp.register.RegisterFragment"
-        android:label="MainFragment" >
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_register">
         <action
             android:id="@+id/action_registerFragment_to_secondFragment"
-            app:destination="@id/secondFragment"
+            app:destination="@id/loginFragment"
             app:enterAnim="@anim/fragment_open_enter" />
     </fragment>
     <fragment
-        android:id="@+id/secondFragment"
+        android:id="@+id/loginFragment"
         android:name="com.tomasz.myfirstapp.login.LoginFragment"
-        android:label="SecondFragment" />
+        tools:layout="@layout/fragment_login"
+        android:label="LoginFragment">
+        <action
+            android:id="@+id/action_loginFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.tomasz.myfirstapp.setings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>

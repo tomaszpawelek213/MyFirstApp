@@ -11,4 +11,9 @@
     <string name="login_button">zaloguj</string>
     <string name="hint_password">Hasło musi zawierać min. 8 znaków</string>
     <string name="hint_username">login 8 znaków</string>
+
+    <string name="settings_fragment_label">Ustawienia</string>
+    <string name="settings_fragment_choose_theme">Wybierz motyw jasny/ciemny</string>
+    <string name="settings_fragment_theme_light">Jasny</string>
+    <string name="settings_fragment_theme_dark">Ciemny</string>
 </resources>
